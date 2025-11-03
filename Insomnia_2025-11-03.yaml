@@ -1,0 +1,156 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1762167946287
+  modified: 1762167946287
+  description: ""
+collection:
+  - name: Api Tasks
+    meta:
+      id: fld_c670ec841ffd45e0aeb9ab4d9cefa676
+      created: 1762168177297
+      modified: 1762168540553
+      sortKey: -1762168177297
+      description: ""
+    children:
+      - url: http://localhost:3001/api/tasks/1
+        name: Update Task
+        meta:
+          id: req_fb1b2073bf9f468da86f2ff1eace1e85
+          created: 1762168183244
+          modified: 1762168528301
+          isPrivate: false
+          description: ""
+          sortKey: -1762168183244
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |
+            { 
+            	"title" : "limpar casa So que Não", 
+            	"description": "Descricao aleatoria", 
+            	"dueDate": "2023-11-10", 
+            	"status": "pendente" 
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/api/tasks
+        name: Create Tasks
+        meta:
+          id: req_b42902ec9b1d4d05ab75bdb10c691850
+          created: 1762168188771
+          modified: 1762168478633
+          isPrivate: false
+          description: ""
+          sortKey: -1762168188771
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            { 
+            	"title" : "limpar casa", 
+            	"description": "Descricao aleatoria", 
+            	"dueDate": "2023-11-10", 
+            	"status": "pendente" 
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/api/tasks/1
+        name: Get Task By Id
+        meta:
+          id: req_124eba7d54e04d62ae512a880125b19d
+          created: 1762168190040
+          modified: 1762168525497
+          isPrivate: false
+          description: ""
+          sortKey: -1762168190040
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/api/tasks
+        name: Get All Tasks
+        meta:
+          id: req_b807f9f6823d4e338ffccad7a61abcf1
+          created: 1762168191566
+          modified: 1762168272589
+          isPrivate: false
+          description: ""
+          sortKey: -1762168191566
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/api/tasks/1
+        name: Delete Task
+        meta:
+          id: req_614560921cc94b809a1419247cb571ea
+          created: 1762168390122
+          modified: 1762168529745
+          isPrivate: false
+          description: ""
+          sortKey: -1762168183144
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1762167965110
+    modified: 1762167965110
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1762167965109
+    modified: 1762167965109
+    isPrivate: false
